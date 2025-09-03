@@ -29,7 +29,7 @@ It showcases my skills, projects, and experience as a **Full Stack Developer**.
 ![Portfolio Preview 1](./assets/images/my.png)
 
 ### 🖼️ Project Section  
-![Portfolio Preview 2](./aasets/images/my2/png)  
+![Portfolio Preview 1](./assets/images/my2.png)
 
 *(Replace `your-image1.png` and `your-image2.png` with your actual image filenames in the repo.)*  
 
