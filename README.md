@@ -26,7 +26,7 @@ It showcases my skills, projects, and experience as a **Full Stack Developer**.
 ## 📸 Preview  
 
 ### 🖼️ Home Page  
-![Portfolio Preview 1](./aasets/images/my/png)
+![Portfolio Preview 1](./assets/images/my.png)
 
 ### 🖼️ Project Section  
 ![Portfolio Preview 2](./aasets/images/my2/png)  
