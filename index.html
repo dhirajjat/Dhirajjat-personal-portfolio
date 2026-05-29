@@ -1,1725 +1,436 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- 
-    - primary meta tags
-  -->
-    <title>Dhirj Jat</title>
-    <meta name="title" content="Drew Hays - Get your product identity from me.">
-    <meta name="description" content="This is a personal portfolio html template made by codewithsadee">
-
-    <!-- 
-    - favicon
-  -->
-    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
-
-    <!-- 
-    - google font link
-  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/font/font.css">
-
-    <!-- 
-    - custom css link
-  -->
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-
-    <!-- 
-    - preload images
-  -->
-    <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
-    <link rel="preload" as="image" href="./assets/images/hero-shape-1.png">
-    <link rel="preload" as="image" href="./assets/images/hero-shape-2.png">
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dhiraj Jat – Full Stack Developer</title>
+<meta name="description" content="Full Stack Developer – React.js, Next.js, Node.js, MERN stack. 3 live client projects. Indore, MP.">
+<link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+ <link href="/assets/css/style.css" rel="stylesheet">
 </head>
+<body>
 
-<body id="top">
+<div id="sp"></div>
+<div class="cdot" id="cdot"></div>
+<div class="cring" id="cring"></div>
 
-    <!-- 
-    - #PRELOADER
-  -->
+<!-- Mobile Nav -->
+<div class="mnav" id="mnav">
+  <a href="#hero" onclick="cn()">Home</a>
+  <a href="#skills" onclick="cn()">Skills</a>
+  <a href="#about" onclick="cn()">About</a>
+  <a href="#projects" onclick="cn()">Projects</a>
+  <a href="#contact" onclick="cn()">Contact</a>
+  <a href="/assets/images/Dhiraj Jat resume.jpg" target="_blank" onclick="cn()">Resume ↗</a>
+</div>
 
-    <!-- <div class="preloader" data-preloader>
-    <span class="line"></span>
-  </div> -->
+<!-- Header -->
+<header id="hdr">
+  <div class="c">
+    <a href="#hero" class="logo">DJ<em>.</em></a>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact" class="cta-nav">Hire Me</a></li>
+      </ul>
+    </nav>
+    <div class="ham" id="ham"><span></span><span></span><span></span></div>
+  </div>
+</header>
 
-
-
-
-
-    <!-- 
-    - #HEADER
-  -->
-
-    <header class="header" data-header>
-        <div class="container">
-
-            <a href="#" class="logo">
-                <img src="./assets/images/logo.png" width="150" height="auto" alt="logo">
-            </a>
-
-            <nav class="navbar" data-navbar>
-
-                <div class="navbar-top">
-                    <a href="#" class="logo">
-                        <img src="./assets/images/logo.svg" width="84" height="26" alt="logo">
-                    </a>
-
-                    <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
-                        <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
-                    </button>
-                </div>
-
-                <ul class="navbar-list">
-
-                    <li>
-                        <a href="#home" class="navbar-link" data-nav-link>Home</a>
-                    </li>
-
-                    <li>
-                        <a href="#service" class="navbar-link" data-nav-link>Services</a>
-                    </li>
-
-                    <li>
-                        <a href="#about" class="navbar-link" data-nav-link>About</a>
-                    </li>
-
-                    <li>
-                        <a href="#project" class="navbar-link" data-nav-link>Project</a>
-                    </li>
-
-                    <li>
-                        <a href="#mantras" class="navbar-link" data-nav-link>Mantras</a>
-                    </li>
-                    <a href="#contact" class="btn btn:hover">
-                        <span class="span">Contact</span>
-
-                        <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                    </a>
-
-                </ul>
-
-
-            </nav>
-
-
-
-            <button class="nav-open-btn btn:hover" aria-label="open menu" data-nav-toggler>
-                <span class="line line-1"></span>
-                <span class="line line-2"></span>
-            </button>
-
-            <div class="overlay" data-overlay data-nav-toggler></div>
-
+<!-- Hero -->
+<section id="hero">
+  <div class="g1"></div><div class="g2"></div>
+  <div class="c" style="width:100%">
+    <div class="hi">
+      <div>
+        <div class="hbadge">Available for Work</div>
+        <h1 class="hname">Hi, I'm<br><span class="acc">Dhiraj Jat</span></h1>
+        <div class="hrole"><span id="typed"></span><span class="cur"></span></div>
+        <p class="hdesc">I design and build modern web solutions — from clean responsive interfaces to powerful backends — delivering products that are fast, reliable, and production-ready.</p>
+        <div class="hbtns">
+          <a href="#projects" class="btn-p">View My Work ↓</a>
+          <a href="/assets/images/Dhiraj Jat resume.jpg" class="btn-s" target="_blank">Download CV</a>
         </div>
-    </header>
-
-
-
-
-
-    <main>
-        <article>
-
-            <!-- 
-        - #HERO
-      -->
-
-            <div class="hero text-center" id="home">
-                <div class="container">
-
-                    <div class="banner-outline has-after">
-
-                        <div class="hero-banner img-holder has-after" style="--width: 300; --height: 500;" data-tilt>
-                            <img src="./assets/images/front.jpg" width="500" height="500" alt="Drew Hays"
-                                class="img-cover">
-                        </div>
-
-                        <span class="span title">Dhiraj Jat</span>
-
-                    </div>
-
-                    <div class="hero-content">
-
-                        <h6 class="h1 title">Hi, I'm </h6>
-                        <h6 class="h1 title">Full Stack Developer</h6>
-                        <p class="hero-tex">I design and develop modern web solutions — from clean user interfaces to
-                            powerful
-                            backends — creating products that are fast, reliable, and engaging."</p>
-                        <div class="wrapper">
-                            <a href="https://dhirajjat.github.io/Dhiraj_Jat_Resume/" class="btn btn:hover">
-                                <span class="span">Resume </span>
-
-                                <ion-icon name="cloud-download-outline" aria-hidden="true"></ion-icon>
-                            </a>
-
-
-                            <span class="social-icons">
-                                <a href="https://www.linkedin.com/in/dhiraj-jat-866084242/" title="_blank">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" class="lucide lucide-linkedin-icon lucide-linkedin">
-                                        <path
-                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-                                        <rect width="4" height="12" x="2" y="9" />
-                                        <circle cx="4" cy="4" r="2" />
-                                    </svg>
-                                </a>
-                                <a href="https://github.com/dhirajjat"> <svg xmlns="http://www.w3.org/2000/svg"
-                                        width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                        class="lucide lucide-github-icon lucide-github">
-                                        <path
-                                            d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
-                                        <path d="M9 18c-4.51 2-5-2-7-2" />
-                                    </svg></a>
-
-
-                                <a href="https://www.instagram.com/dheerajjat88/">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" class="lucide lucide-instagram-icon lucide-instagram">
-                                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-                                    </svg>
-                                </a>
-                            </span>
-                        </div>
-
-                    </div>
-
-                    <img src="./assets/images/hero-shape-1.png" width="559" height="232" alt="shape"
-                        class="shape shape-1">
-
-                    <img src="./assets/images/hero-shape-2.png" width="1358" height="497" alt="shape"
-                        class="shape shape-2">
-
-                </div>
-            </div>
-
-
-
-
-
-            <!-- 
-        - #SERVICE
-      -->
-
-            <section class="service text-center" aria-label="my services" id="service">
-                <div class="container">
-
-                    <ul class="service-list">
-
-                        <li class="service-item">
-                            <div class="service-card">
-                                <div class="card-icon">
-                                    <img src="./assets/images/service-icon-1.svg" width="80" height="80" loading="lazy"
-                                        alt="service icon">
-                                </div>
-                                <h3 class="card-title"><a href="#">Web Development</a></h3>
-
-                            </div>
-                        </li>
-
-                        <li class="service-item">
-                            <div class="service-card">
-                                <div class="card-icon">
-                                    <img src="./assets/images/service-icon-2.svg" width="80" height="80" loading="lazy"
-                                        alt="service icon">
-                                </div>
-                                <h3 class="card-title"><a href="#">Frontend Development</a></h3>
-
-                            </div>
-                        </li>
-
-                        <li class="service-item">
-                            <div class="service-card">
-                                <div class="card-icon">
-                                    <img src="./assets/images/service-icon-3.svg" width="80" height="80" loading="lazy"
-                                        alt="service icon">
-                                </div>
-                                <h3 class="card-title"><a href="#">Backend Development</a></h3>
-
-                            </div>
-                        </li>
-
-                        <li class="service-item">
-                            <div class="service-card">
-                                <div class="card-icon">
-                                    <img src="./assets/images/service-icon-4.svg" width="80" height="80" loading="lazy"
-                                        alt="service icon">
-                                </div>
-                                <h3 class="card-title"><a href="#">Database & Deployment</a></h3>
-
-                            </div>
-                        </li>
-
-                    </ul>
-
-                </div>
-            </section>
-
-
-
-
-
-            <!-- 
-        - #ABOUT
-      -->
-
-            <section class="section about" aria-label="about-me" id="about">
-                <div class="container">
-
-                    <div class="tab-container">
-
-                        <ul class="tab-btn-list">
-
-                            <li class="tab-btn-item">
-                                <button class="tab-btn title h6 active" data-tab-btn="about">About Me</button>
-                            </li>
-
-                            <li class="tab-btn-item">
-                                <button class="tab-btn title h6" data-tab-btn="skillset">Skillset</button>
-                            </li>
-                            <li class="tab-btn-item">
-                                <button class="tab-btn title h6" data-tab-btn="internship">Internship</button>
-                            </li>
-                            <li class="tab-btn-item">
-                                <button class="tab-btn title h6" data-tab-btn="certificates">Certificates</button>
-                            </li>
-
-                            <li class="tab-btn-item">
-                                <button class="tab-btn title h6" data-tab-btn="comuunity">Beyond Code</button>
-                            </li>
-
-                        </ul>
-                        <!-- about me -->
-                        <div class="tab-content active" data-tab-content="about">
-                            <div class="grid-list">
-
-                                <figure class="about-banner img-holder" style="--width: ; --height: ;" data-tilt>
-                                    <img src="./assets/images/WhatsApp Image 2025-08-30 at 01.26.35_4b0b393e.jpg"
-                                        width="500" height="200" loading="lazy" alt="about banner" class="img-cover">
-                                </figure>
-
-                                <div class="about-content">
-
-                                    <h2 class="h4 title section-title">
-                                        About Me
-                                    </h2>
-                                    <p class="section-text">
-                                        I’m <strong>Dhiraj Jat</strong>, a Full Stack Developer specializing in the
-                                        <strong>MERN
-                                            stack</strong> (MongoDB, Express.js, React.js, Node.js), with strong
-                                        expertise in building
-                                        **modern, scalable, and high-performance web applications**. I am passionate
-                                        about developing
-                                        **responsive and intuitive front-end interfaces**, while also implementing
-                                        **robust back-end systems
-                                        and RESTful APIs** to ensure seamless functionality.
-                                        <br>
-                                        I completed a **6-month internship at Alphawizz Technology**, where I gained
-                                        hands-on experience in
-                                        **React.js, JavaScript ES6+, HTML5, CSS3, Tailwind CSS, and Bootstrap**. During
-                                        this period, I
-                                        worked on multiple web modules, implemented **dynamic UI components**, performed
-                                        **state management
-                                        with React hooks**, and contributed to **frontend-backend integration**. I also
-                                        practiced **version
-                                        control using Git**, debugging, and optimizing code for **performance and
-                                        maintainability**.
-                                        <br>
-                                        My approach emphasizes **clean, modular, and reusable code**, following industry
-                                        best practices, and
-                                        leveraging **modern web development tools and workflows**. I constantly strive
-                                        to improve my skills
-                                        and stay updated with the latest technologies, enabling me to build **efficient,
-                                        scalable, and
-                                        user-centric applications** suitable for real-world deployment.
-                                    </p>
-
-
-
-                                    <ul class="about-list">
-
-                                        <li class="about-item">
-                                            <p class="list-title">Name</p>
-                                            <span class="span title h5">Dhiraj Jat</span>
-                                        </li>
-
-                                        <li class="about-item">
-                                            <p class="list-title">Age</p>
-                                            <span class="span title h5">23 Years</span>
-                                        </li>
-
-                                        <li class="about-item">
-                                            <p class="list-title">Education</p>
-                                            <span class="span title h5">MCA, BSC(cs)</span>
-                                        </li>
-
-                                        <li class="about-item">
-                                            <p class="list-title">Phone Number</p>
-                                            <span class="span title h5">+91 9098******</span>
-                                        </li>
-
-                                        <li class="about-item">
-                                            <p class="list-title">Email Address</p>
-                                            <span class="span title h5">dheerajjat9098@gmail.com</span>
-                                        </li>
-
-                                        <li class="about-item">
-                                            <p class="list-title">Social Network</p>
-                                            <div class="social-list">
-                                                <a href="https://www.linkedin.com/in/dhiraj-jat-866084242/"
-                                                    title="_blank">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                        class="lucide lucide-linkedin-icon lucide-linkedin">
-                                                        <path
-                                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-                                                        <rect width="4" height="12" x="2" y="9" />
-                                                        <circle cx="4" cy="4" r="2" />
-                                                    </svg>
-                                                </a>
-                                                <a href="https://github.com/dhirajjat"> <svg
-                                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                        class="lucide lucide-github-icon lucide-github">
-                                                        <path
-                                                            d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
-                                                        <path d="M9 18c-4.51 2-5-2-7-2" />
-                                                    </svg></a>
-
-
-                                                <a href="https://www.instagram.com/dheerajjat88/">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                        class="lucide lucide-instagram-icon lucide-instagram">
-                                                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-                                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                                                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-                                                    </svg>
-                                                </a>
-                                            </div>
-                                        </li>
-
-                                    </ul>
-
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <!-- <div class="tab-content active" data-tab-content="about">
-              <div class="grid-list">
-
-                <figure class="about-banner img-holder" style="--width: ; --height: ;" data-tilt>
-                  <img src="./assets/images/about-banner.jpg" width="570" height="420" loading="lazy" alt="about banner"
-                    class="img-cover">
-                </figure>
-
-                <div class="about-content">
-
-                  <h2 class="h4 title section-title">
-                    A very small stage in a vast cosmic.
-                  </h2>
-
-                  <p class="section-text">
-                    A very small stage in a vast cosmic arena great turbuslent clouds encyclo-paedia galactica star
-                    stuff harvesting star light the carbon in our apple pies realm of the galaxies
-                  </p>
-
-                  <ul class="about-list">
-
-                    <li class="about-item">
-                      <p class="list-title">Name</p>
-
-                      <span class="span title h5">Drew Hays</span>
-                    </li>
-
-                    <li class="about-item">
-                      <p class="list-title">Phone Number</p>
-
-                      <span class="span title h5">123. 456. 789. 01</span>
-                    </li>
-
-                    <li class="about-item">
-                      <p class="list-title">Email Address</p>
-
-                      <span class="span title h5">info@drew.com</span>
-                    </li>
-
-                    <li class="about-item">
-                      <p class="list-title">Social Network</p>
-
-                      <div class="social-list">
-
-                        <a href="#" class="social-link h6" title="Facebook">Fb.</a>
-                        <a href="#" class="social-link h6" title="Behance">Be.</a>
-                        <a href="#" class="social-link h6" title="Linkedin">Ln.</a>
-                        <a href="#" class="social-link h6" title="Dribbble">Dr.</a>
-
-                      </div>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-              </div>
-            </div> -->
-
-                        <!-- skill set  -->
-
-                        <div class="tab-content" data-tab-content="skillset">
-                            <div class="grid-list">
-
-                                <div class="skill-content">
-                                    <h2 class="h4 title section-title">Programming Languages</h2>
-
-                                    <!-- <h3 class="h4 title section-title">
-                    We help to create visual strategies.
-                  </h3>
-
-                  <p class="section-text">
-                    A very small stage in a vast cosmic arena great turbuslent clouds encyclo-paedia galactica star
-                    stuff harvesting star light
-                  </p> -->
-
-                                    <!-- <ul class="skill-list">
-
-                    <li>
-                      <div class="skill-wrapper">
-                        <span class="span">C</span>
-
-                        <span class="value">95%</span>
-                      </div>
-
-                      <div class="progress-bar">
-                        <div class="progress-fill" style="width: 95%"></div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="skill-wrapper">
-                        <span class="span">Website Development</span>
-
-                        <span class="value">95%</span>
-                      </div>
-
-                      <div class="progress-bar">
-                        <div class="progress-fill" style="width: 95%"></div>
-                      </div>
-                    </li>
-
-                    <li>
-                      <div class="skill-wrapper">
-                        <span class="span">Design UI & UX</span>
-
-                        <span class="value">85%</span>
-                      </div>
-
-                      <div class="progress-bar">
-                        <div class="progress-fill" style="width: 85%"></div>
-                      </div>
-                    </li>
-
-                  </ul> -->
-                                    <ul class="skill-list">
-                                        <li>C</li>
-                                        <li>JAVA</li>
-                                        <li>JavaScript</li>
-                                        <li>Tailwind CSS</li>
-                                        <li>Bootstrap</li>
-                                        <li>Materialize CSS</li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <h2 class="h4 title section-title">Frameworks & Libraries</h2>
-
-                                    <ul class="skill-list">
-                                        <li>Express</li>
-                                        <li>Node</li>
-                                        <li>React</li>
-                                        <li>Soket.io</li>
-                                        <li>Redux </li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <h2 class="h4 title section-title">Databases</h2>
-
-                                    <ul class="skill-list">
-                                        <li>MongoDB</li>
-                                        <li>MySQL</li>
-                                        <li>MongoDB-Atlas</li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <h2 class="h4 title section-title">Tools & Technologies</h2>
-
-                                    <ul class="skill-list">
-                                        <li>Git</li>
-                                        <li>Docker</li>
-                                    </ul>
-                                </div>
-
-
-                                <!-- <figure class="skill-banner img-holder" style="--width: 570; --height: 420;" data-tilt>
-                  <img src="./assets/images/skill-banner.jpg" width="570" height="420" loading="lazy" alt="skill banner"
-                    class="img-cover">
-                </figure> -->
-
-                            </div>
-                        </div>
-                        <!--  comuunity work-->
-                        <div class="tab-content" data-tab-content="comuunity">
-                            <div class="grid-list">
-
-                                <div class="interview-card img-holder" style="--width: 850; --height: 900; " data-tilt>
-                                    <h5><strong>Robin Hood Army – Volunteer</strong>
-                                        Supported food distribution drives to serve underprivileged communities and
-                                        reduce hunger.</h5>
-                                    <img src="./assets/images/RobinHood.png" width="800" height="800" loading="lazy"
-                                        alt="interview 1" class="img-cover">
-
-                                    <button class="btn btn:hover"><a href="https://robinhoodarmy.com/">SEE</a></button>
-                                </div>
-
-                                <div class="interview-card img-holder" style="--width: 850; --height: 900; " data-tilt>
-                                    <h5 style="z-index: 50;">Art of Living – Volunteer
-                                        Engaged in social initiatives such as tree plantation drives, food distribution,
-                                        teaching
-                                        underprivileged children, and promoting yoga & meditation practices.</h5>
-                                    <img src="./assets/images/artofliving.png" width="800" height="800" loading="lazy"
-                                        alt="interview 1" class="img-cover">
-
-                                    <button class="btn btn:hover"><a
-                                            href="https://www.artofliving.org/in-en/social-impact">SEE</a></button>
-                                </div>
-
-                                <!-- <div class="interview-card img-holder" style="--width: 500; --height: 420;" data-tilt>
-                  <h5>Art of Living – Volunteer
-Engaged in social initiatives such as tree plantation drives, food distribution, teaching underprivileged children, and promoting yoga & meditation practices.</h5>
-                  <img src="./assets/images/artofliving.png" width="300" height="400" loading="lazy" alt="interview 1"
-                    class="img-cover">
-
-                  <button class="btn btn:hover"><a href="https://www.artofliving.org/in-en/social-impact">SEE</a></button>
-                </div> -->
-
-                            </div>
-                        </div>
-
-                        <!-- certificates -->
-
-                        <div class="tab-content" data-tab-content="certificates">
-
-                            <h3 class="h4 title section-title">
-                                My Certificates
-                            </h3>
-
-                            <ul class="grid-list">
-
-                                <li>
-                                    <div class="award-card">
-                                        <figure class="card-banner img-holder" style="--width: 534; --height: 383;"
-                                            data-tilt>
-                                            <img src="./assets/images/alphawizz.jpg" width="534" height="383"
-                                                loading="lazy" alt="certificate" class="img-cover">
-                                        </figure>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="award-card">
-                                        <figure class="card-banner img-holder" style="--width: 534; --height: 383;"
-                                            data-tilt>
-                                            <img src="./assets/images/unified.png" width="534" height="383"
-                                                loading="lazy" alt="certificate" class="img-cover">
-                                        </figure>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="award-card">
-                                        <figure class="card-banner img-holder" style="--width: 534; --height: 383;"
-                                            data-tilt>
-                                            <img src="./assets/images/codeAlpha.png" width="534" height="383"
-                                                loading="lazy" alt="certificate" class="img-cover">
-                                        </figure>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="award-card">
-                                        <figure class="card-banner img-holder" style="--width: 534; --height: 383;"
-                                            data-tilt>
-                                            <img src="./assets/images/apna.png" width="534" height="383" loading="lazy"
-                                                alt="certificate" class="img-cover">
-                                        </figure>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="award-card">
-                                        <figure class="card-banner img-holder" style="--width: 534; --height: 383;"
-                                            data-tilt>
-                                            <img src="./assets/images/nptel.png" width="534" height="383" loading="lazy"
-                                                alt="certificate" class="img-cover">
-                                        </figure>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="award-card">
-                                        <figure class="card-banner img-holder" style="--width: 534; --height: 383;"
-                                            data-tilt>
-                                            <img src="./assets/images/nptelSoft.png" width="534" height="383"
-                                                loading="lazy" alt="certificate" class="img-cover">
-                                        </figure>
-                                    </div>
-                                </li>
-
-                            </ul>
-
-                        </div>
-                        <!-- Internship -->
-                        <div class="tab-content" data-tab-content="internship">
-                            <ul class="grid-list">
-
-                                <!-- Internship 1 -->
-                                <li>
-                                    <div class="exhibition-card">
-
-                                        <div class="card-icon">
-                                            <ion-icon name="briefcase-outline" aria-hidden="true"></ion-icon>
-                                        </div>
-
-                                        <div class="card-content">
-                                            <h3 class="card-title">React Developer Intern</h3>
-                                            <p><strong>Alphawizz Technology</strong> | Indore<br> Jan 2025 – July 2025
-                                            </p>
-                                            <ul>
-                                                <li>Contributed to <strong>SolarGram</strong> (client project) –
-                                                    corporate website for solar
-                                                    energy products</li>
-                                                <li>Developed responsive UI components with <strong>React, Tailwind CSS,
-                                                        and Bootstrap</strong>
-                                                </li>
-                                                <li>Built dummy projects first, then contributed to <strong>live client
-                                                        delivery</strong></li>
-                                                <li>Worked on bug fixing, UI improvements, and smooth animations</li>
-                                            </ul>
-                                        </div>
-
-                                    </div>
-                                </li>
-
-                                <!-- Internship 2 -->
-                                <li>
-                                    <div class="exhibition-card">
-
-                                        <div class="card-icon">
-                                            <ion-icon name="briefcase-outline" aria-hidden="true"></ion-icon>
-                                        </div>
-
-                                        <div class="card-content">
-                                            <h3 class="card-title">Frontend Developer Intern</h3>
-                                            <p><strong>Unified Mentor</strong> | Remote<br> Dec 2024 – Feb 2025</p>
-                                            <ul>
-                                                <li>Worked on weekly <strong>React.js assignments</strong> to practice
-                                                    frontend development
-                                                    skills</li>
-                                                <li>Built responsive static websites using <strong>HTML, CSS, and
-                                                        Bootstrap</strong></li>
-                                                <li>Practiced Git workflows by submitting tasks regularly to
-                                                    <strong>GitHub</strong></li>
-                                                <li>Gained hands-on exposure to modern frontend development processes
-                                                </li>
-                                            </ul>
-                                        </div>
-
-
-                                    </div>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-
-
-
-
-            <!-- 
-        - #CTA
-      -->
-
-            <section class="section cta" aria-label="work with me">
-                <div class="container">
-
-                    <h2 class="title h2 section-title text-center">
-                        Let's Work Together On Your Next Project!
-                    </h2>
-
-                    <a href="#co" class="btn btn:hover">
-                        <span class="span">Hire Me Now</span>
-
-                        <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                    </a>
-
-                </div>
-            </section>
-
-
-
-
-
-            <!-- 
-        - #PROJECTS
-      -->
-
-            <section class="section project" aria-label="my latest projects" id="project">
-
-                <ul class="slider-list">
-                    <!-- //project -1 -->
-                    <!-- Project-1 Card -->
-                    <li class="slider-item">
-                        <div class="project-card text-center">
-
-                            <div class="card-banner img-holder has-before">
-                                <img src="./assets/images/quickmeetcollege (1).jpg" width="1000" height="763"
-                                    loading="lazy" alt="E-Commerce Project" class="img-cover">
-
-                                <!-- Details Button -->
-                                <a href="#" class="btn btn:hover details" data-modal="modal1">
-                                    <span class="span">Project Details</span>
-                                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                                </a>
-                            </div>
-
-                            <div class="card-content">
-                                <p class="card-subtitle">Real-Time Communication with Secure Peer-to-Peer Connections
-                                </p>
-                                <h3 class="title h3">
-                                    <a href="#" class="card-title">QuickMeet</a>
-                                </h3>
-                            </div>
-                        </div>
-                    </li>
-
-                    <!-- Modal  Box for Project-1 -->
-                    <div id="modal1" class="modal">
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-
-                            <h2 class="title h3">QuickMeet - Real-Time Video Meeting App</h2>
-                            <img style="width: 100%; height: auto;" src="assets/images/quickmeetcollege (1).jpg" alt="">
-                            <h3>Description</h3>
-                            <p>
-                                <strong>QuickMeet</strong> is a modern video conferencing application designed to
-                                provide a seamless and
-                                secure online
-                                meeting experience.
-                                Users can create or join virtual meeting rooms instantly by entering a unique room code.
-                                It supports <strong>peer-to-peer</strong> video and audio calls, in-room chat, and
-                                real-time user
-                                presence.
-                                The project was built to demonstrate expertise in WebRTC, real-time communication, and
-                                scalable backend
-                                design.
-                            </p>
-
-                            <h3>Key Features</h3>
-                            <ul>
-                                <li> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-chevron-right-icon lucide-chevron-right">
-                                        <path d="m9 18 6-6-6-6" />
-                                    </svg>Create or join meeting rooms using a unique meeting code</li>
-                                <li> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-chevron-right-icon lucide-chevron-right">
-                                        <path d="m9 18 6-6-6-6" />
-                                    </svg>Real-time video and audio communication powered by <strong>WebRTC</strong>
-                                </li>
-                                <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-chevron-right-icon lucide-chevron-right">
-                                        <path d="m9 18 6-6-6-6" />
-                                    </svg>Live signaling, room management, and user presence with
-                                    <strong>Socket.IO</strong></li>
-                                <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-chevron-right-icon lucide-chevron-right">
-                                        <path d="m9 18 6-6-6-6" />
-                                    </svg>In-room chat messaging for text communication</li>
-                                <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-chevron-right-icon lucide-chevron-right">
-                                        <path d="m9 18 6-6-6-6" />
-                                    </svg>Lightweight and responsive UI for smooth user experience</li>
-                                <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-chevron-right-icon lucide-chevron-right">
-                                        <path d="m9 18 6-6-6-6" />
-                                    </svg>Automatic handling of multiple participants in a single room</li>
-                                <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-chevron-right-icon lucide-chevron-right">
-                                        <path d="m9 18 6-6-6-6" />
-                                    </svg>Secure communication with <strong>HTTPS</strong> and authentication flow</li>
-                                <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-chevron-right-icon lucide-chevron-right">
-                                        <path d="m9 18 6-6-6-6" />
-                                    </svg>Cross-browser compatibility and mobile responsiveness</li>
-                            </ul>
-
-                            <h3>Technologies</h3>
-                            <p>
-                                <strong>Frontend:</strong> React.js, HTML5, CSS3, JavaScript<br>
-                                <strong>Backend:</strong> Node.js, Express.js<br>
-                                <strong>Database:</strong> MongoDB Atlas<br>
-                                <strong>Real-Time Communication:</strong> WebRTC, Socket.IO<br>
-                                <strong>Others:</strong> JWT Authentication, REST APIs
-                            </p>
-
-                            <h3>Challenges & Solutions</h3>
-                            <p>
-                                <strong>Challenge 1:</strong> Establishing reliable peer-to-peer video and audio streams
-                                between
-                                multiple participants.<br>
-                                <em>Solution:</em> Implemented <strong>WebRTC</strong> with ICE candidates and STUN/TURN
-                                servers to
-                                handle network traversal and NAT issues.
-                            </p>
-                            <p>
-                                <strong>Challenge 2:</strong> Managing real-time signaling and synchronization when
-                                users join/leave
-                                rooms.<br>
-                                <em>Solution:</em> Used <strong>Socket.IO</strong> for event-based signaling and dynamic
-                                room
-                                management, ensuring smooth participant updates.
-                            </p>
-                            <p>
-                                <strong>Challenge 3:</strong> Ensuring secure and smooth meeting flow across
-                                devices.<br>
-                                <em>Solution:</em> Added <strong>JWT-based authentication</strong>, HTTPS setup, and
-                                responsive design
-                                for cross-device compatibility.
-                            </p>
-
-                            <div class="links">
-                                <a href="https://quickmeetfrontend-b5ws.onrender.com/" class="  btn btn:hover"
-                                    target="_blank">Live
-                                    Demo</a>
-                                <a href="https://github.com/dhirajjat/QuickMeet" class="  btn btn:hover"
-                                    target="_blank">View Code</a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-- //project -2 -->
-                    <li class="slider-item">
-                        <div class="project-card text-center">
-
-                            <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
-                                <img src="./assets/images/airbnb.png" width="1000" height="763" loading="lazy"
-                                    alt="Project poster: Front End Development & Maintenance" class="img-cover">
-
-                                <a href="#" class="btn btn:hover details" data-modal="modal2">
-                                    <span class="span">Project Details</span>
-                                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                                </a>
-                            </div>
-
-                            <div class="card-content">
-                                <p class="card-subtitle">A Property Showcase Inspired by Airbnb , Bringing Hosts and
-                                    Homes Online</p>
-
-                                <h3 class="title h3">
-                                    <a href="#" class="card-title">Airbnb – Explore & Host Spaces</a>
-                                </h3>
-                            </div>
-
-                        </div>
-                    </li>
-
-                    <!-- Model2 for Airbnb project 2 -->
-                    <div id="modal2" class="modal">
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-
-                            <h2 class="title h3">Airbnb - Property Booking Platform</h2>
-                            <img style="width: 100%; height: auto;" src="assets/images/airbnb-college.jpg" alt="">
-                            <h3>Description</h3>
-                            <p>
-                                This <strong>Airbnb</strong> Clone allows users to browse, search, and filter property
-                                listings easily.
-                                Users can log in to list their own properties, edit or delete them, and manage reviews.
-                                Maps integration helps users select and view property locations with markers.
-                                Full authentication, authorization, and error handling ensure a secure and smooth
-                                experience.
-
-                            </p>
-
-                            <h3>Key Features</h3>
-                            <ul>
-                                <li> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-chevron-right-icon lucide-chevron-right">
-                                        <path d="m9 18 6-6-6-6" />
-                                    </svg>User authentication with <strong>JWT – login/register </strong> required for
-                                    listing or reviews
-                                </li>
-                                <li> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-chevron-right-icon lucide-chevron-right">
-                                        <path d="m9 18 6-6-6-6" />
-                                    </svg>Search and filter properties by location, price, type, and amenities</li>
-                                <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-chevron-right-icon lucide-chevron-right">
-                                        <path d="m9 18 6-6-6-6" />
-                                    </svg>Users can list their own properties and edit or delete only their listings
-                                </li>
-                                <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-chevron-right-icon lucide-chevron-right">
-                                        <path d="m9 18 6-6-6-6" />
-                                    </svg>Users can add <strong>reviews</strong> to properties and delete their own
-                                    reviews</li>
-                                <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-chevron-right-icon lucide-chevron-right">
-                                        <path d="m9 18 6-6-6-6" />
-                                    </svg>Map integration using <strong>Mapbox</strong> – property location displayed
-                                    with markers</li>
-                                <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-chevron-right-icon lucide-chevron-right">
-                                        <path d="m9 18 6-6-6-6" />
-                                    </svg>Non-logged-in users can only view listings, cannot create listings or reviews
-                                </li>
-                                <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-chevron-right-icon lucide-chevron-right">
-                                        <path d="m9 18 6-6-6-6" />
-                                    </svg>Proper error handling with user-friendly error messages</li>
-                                <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-chevron-right-icon lucide-chevron-right">
-                                        <path d="m9 18 6-6-6-6" />
-                                    </svg>Responsive UI for mobile and desktop</li>
-                            </ul>
-
-                            <h3>Technologies</h3>
-                            <p>
-                                <strong>Frontend:</strong> EJS, HTML5, CSS3, Tailwind CSS, Lightswind<br>
-                                <strong>Backend:</strong> Node.js, Express.js<br>
-                                <strong>Database:</strong> MongoDB, Mongoose, Connect-Mongo<br>
-                                <strong>Authentication:</strong> Passport.js, JWT, Passport-Local-Mongoose<br>
-                                <strong>File Upload & Cloud:</strong> Multer, Cloudinary, Multer-Storage-Cloudinary<br>
-                                <strong>Other:</strong> Mapbox SDK, Method-Override, Connect-Flash, Joi Validation
-                            </p>
-
-                            <h3>Challenges & Solutions</h3>
-                            <p>
-                                <strong>Challenge 1:</strong> Allowing only owners to edit/delete their listings and
-                                reviews.<br>
-                                <em>Solution:</em> Implemented JWT-based authentication with proper authorization
-                                checks.
-                            </p>
-                            <p>
-                                <strong>Challenge 2:</strong> Handling location selection and display on a map.<br>
-                                <em>Solution:</em> Integrated <strong>Mapbox SDK</strong> with property markers for
-                                interactive map
-                                experience.
-                            </p>
-                            <p>
-                                <strong>Challenge 3:</strong> Ensuring smooth error handling for multiple actions
-                                (listing, reviews,
-                                login).<br>
-                                <em>Solution:</em> Created centralized error handling with descriptive popup messages
-                                using
-                                Connect-Flash.
-                            </p>
-
-                            <div class="links">
-                                <a href="https://airbnb-7umo.onrender.com/listings" class="  btn btn:hover"
-                                    target="_blank">Live
-                                    Demo</a>
-                                <a href="https://github.com/dhirajjat/Airbnb" class="  btn btn:hover"
-                                    target="_blank">View Code</a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-- //project -3 -->
-                    <li class="slider-item">
-
-                        <div class="project-card text-center">
-
-                            <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
-                                <img src="./assets/images/solargram.jpg" width="1000" height="763" loading="lazy"
-                                    alt="Project poster: Flutter Framework & Warframe Design" class="img-cover">
-
-                                <a href="#" class="btn btn:hover details" data-modal="modal3">
-                                    <span class="span">Project Details</span>
-
-                                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                                </a>
-                            </div>
-
-                            <div class="card-content">
-                                <p class="card-subtitle">Empowering Sustainable Energy Through Quality Solar Products
-                                </p>
-
-                                <h3 class="title h3">
-                                    <a href="#" class="card-title">SolarGram - Solar Energy Solutions</a>
-                                </h3>
-                            </div>
-
-                        </div>
-                    </li>
-                     <!-- model-3 -->
-                    <div id="modal3" class="modal">
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-
-                            <h2 class="title h3">SolarGram - Solar Energy Solutions</h2>
-                            <img style="width: 100%; height: auto;" src="assets/images/solargram.jpg"
-                                alt="SolarGram Project">
-
-                            <h3>Description</h3>
-                            <p>
-                                <strong>SolarGram</strong> is a corporate website designed for a leading solar power
-                                solutions provider.
-                                It serves as a digital presence for the company, showcasing its <strong>products,
-                                    services,
-                                    achievements,
-                                    and commitment to renewable energy</strong>. The platform is fully responsive,
-                                ensuring accessibility
-                                across devices, and is optimized for performance and user experience.
-
-                                The website includes dedicated sections such as <strong>About Us, Product Showcase,
-                                    Services,
-                                    Case Studies, and Contact</strong>, providing visitors with a clear understanding of
-                                the company’s
-                                growth journey, values, and offerings.
-
-                                During my internship, I first built a <strong>dummy version</strong> to practice project
-                                structure,
-                                design patterns, and responsive UI implementation. Later, I actively contributed to the
-                                <strong>live client project</strong>, where I was responsible for <strong>UI
-                                    development,
-                                    product presentation layout, smooth animations, and bug fixing</strong>. This
-                                project helped
-                                me gain real-world experience in working on a professional client-facing website within
-                                a collaborative team environment.
-                            </p>
-
-
-
-                            <h3>Key Features</h3>
-                            <ul>
-                                <li>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-chevron-right-icon lucide-chevron-right">
-                                        <path d="m9 18 6-6-6-6" />
-                                    </svg>
-                                    Informative landing page showcasing company vision and mission
-                                </li>
-                                <li>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-chevron-right-icon lucide-chevron-right">
-                                        <path d="m9 18 6-6-6-6" />
-                                    </svg>
-                                    Product showcase section with images and specifications
-                                </li>
-                                <li>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-chevron-right-icon lucide-chevron-right">
-                                        <path d="m9 18 6-6-6-6" />
-                                    </svg>
-                                    About Us page highlighting company growth and achievements
-                                </li>
-                                <li>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-chevron-right-icon lucide-chevron-right">
-                                        <path d="m9 18 6-6-6-6" />
-                                    </svg>
-                                    Services section explaining solar power solutions and use cases
-                                </li>
-                                <li>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-chevron-right-icon lucide-chevron-right">
-                                        <path d="m9 18 6-6-6-6" />
-                                    </svg>
-                                    Contact page with inquiry form and Google Maps integration
-                                </li>
-                                <li>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-chevron-right-icon lucide-chevron-right">
-                                        <path d="m9 18 6-6-6-6" />
-                                    </svg>
-                                    Responsive design optimized for mobile and desktop users
-                                </li>
-                            </ul>
-
-                            <h3>Technologies</h3>
-                            <p>
-                                <strong>Frontend:</strong> React.js, HTML5, CSS3, Bootstrap, Tailwind CSS <br>
-                                <strong>Backend (if any):</strong> Node.js / Express.js (basic routing, if used) <br>
-                                <strong>Other:</strong> Framer Motion (animations), Google Maps Embed API
-                            </p>
-
-                            <h3>Challenges & Solutions</h3>
-                            <p>
-                                <strong>Challenge 1:</strong> Creating a professional and visually appealing static
-                                site. <br>
-                                <em>Solution:</em> Designed a clean layout with Tailwind CSS and Bootstrap for
-                                responsive UI.
-                            </p>
-                            <p>
-                                <strong>Challenge 2:</strong> Showcasing multiple products with detailed information.
-                                <br>
-                                <em>Solution:</em> Built a structured product section with reusable React components.
-                            </p>
-                            <p>
-                                <strong>Challenge 3:</strong> Ensuring smooth animations without performance issues.
-                                <br>
-                                <em>Solution:</em> Integrated lightweight <strong>Framer Motion</strong> animations.
-                            </p>
-
-                            <div class="links">
-                                <a href="https://solargram.in/" class="btn btn:hover" target="_blank">Live Company
-                                    Site</a>
-                                <a href="https://solar-gram-web.netlify.app/" class="btn btn:hover"
-                                    target="_blank">Dummy Practice </a>
-                                <a href="https://github.com/dhirajjat/Solargram" class="btn btn:hover"
-                                    target="_blank">View Code</a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-- //project -4 -->
-                    <li class="slider-item">
-                        <div class="project-card text-center">
-
-                            <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
-                                <img src="./assets/images/quick stay.jpg" width="1000" height="763" loading="lazy"
-                                    alt="Project poster: Full Web Development Project With JavaScript"
-                                    class="img-cover">
-
-                                <a href="#" class="btn btn:hover details" data-modal="modal4">
-                                    <span class="span">Project Details</span>
-
-                                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                                </a>
-                            </div>
-
-                            <div class="card-content">
-                                <p class="card-subtitle">Interactive React application for exploring, filtering, and booking hotels.</p>
-
-                                <h3 class="title h3">
-                                    <a href="#" class="card-title">Quick Stay </a>
-                                </h3>
-                            </div>
-
-                        </div>
-                    </li>
-                      <!-- model -4 -->
-                    <div id="modal4" class="modal">
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-
-                            <h2 class="title h3">QuickStay</h2>
-                            <img style="width: 100%; height: auto;" src="assets/images/quick stay.jpg" alt="QuickStay">
-
-                            <h3>Description</h3>
-                            <p>
-                                <strong>QuickStay</strong> is a frontend-focused, component-based hotel booking
-                                application built with <strong>React.js</strong>.
-                                The app uses <strong>dummy JSON data</strong> to simulate rooms, users, and booking
-                                workflows, while authentication is implemented using <strong>Clerk</strong>.
-                                It is designed to provide a **responsive, user-friendly, and visually appealing
-                                interface** for hotel listings and bookings.
-                            </p>
-
-                            <h3>Key Features</h3>
-                            <ul>
-                                <li>🔹 <strong>Component-based architecture</strong> for reusable and maintainable UI
-                                    modules</li>
-                                <li>🔹 <strong>Login/Register</strong> system using <strong>Clerk
-                                        authentication</strong></li>
-                                <li>🔹 <strong>Filterable hotel listings</strong> based on price, availability, and
-                                    rating</li>
-                                <li>🔹 <strong>Static testimonials</strong> section showcasing user reviews</li>
-                                <li>🔹 <strong>Room showcase</strong> with gallery and images for each hotel</li>
-                                <li>🔹 <strong>Dummy payment workflow</strong> to simulate booking experience</li>
-                                <li>🔹 Fully <strong>responsive design</strong> for mobile and desktop</li>
-                            </ul>
-
-                            <h3>Technologies</h3>
-                            <p>
-                                <strong>Frontend:</strong> React.js, Tailwind CSS, Bootstrap<br>
-                                <strong>Authentication:</strong> Clerk<br>
-                                <strong>Others:</strong> Component-based architecture, JSON data simulation, responsive
-                                design, state management
-                            </p>
-
-                            <h3>Challenges & Solutions</h3>
-                            <p>
-                                <strong>Challenge 1:</strong> Managing dynamic hotel data and filters without a
-                                backend.<br>
-                                <em>Solution:</em> Used <strong>dummy JSON</strong> data with React state and props to
-                                handle listing and filtering efficiently.
-                            </p>
-                            <p>
-                                <strong>Challenge 2:</strong> Implementing authentication and protected routes.<br>
-                                <em>Solution:</em> Integrated <strong>Clerk authentication</strong> to handle login,
-                                registration, and access control for users.
-                            </p>
-                            <p>
-                                <strong>Challenge 3:</strong> Creating a visually appealing UI with reusable
-                                components.<br>
-                                <em>Solution:</em> Developed a <strong>component-based architecture</strong> with
-                                Tailwind CSS and Bootstrap for modular, responsive design.
-                            </p>
-
-                            <div class="links">
-                                <a href="https://queeckstay.netlify.app/" class="btn btn:hover" target="_blank">Live
-                                    Demo</a>
-                                <a href="https://github.com/dhirajjat/QuickStay" class="btn btn:hover"
-                                    target="_blank">View Code</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- //project -5 -->
-                    <li class="slider-item">
-                        <div class="project-card text-center">
-
-                            <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
-                                <img src="./assets/images/doctor -appoint .jpg" width="1000" height="763" loading="lazy"
-                                    alt="Project poster: Cloud Migration & AWS Services" class="img-cover">
-
-                                <a href="#" class="btn btn:hover details" data-modal="modal5">
-                                    <span class="span">Project Details</span>
-
-                                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                                </a>
-                            </div>
-
-                            <div class="card-content">
-                                <p class="card-subtitle">Healthcare information management system with role-based login.
-                                </p>
-
-                                <h3 class="title h3">
-                                    <a href="#" class="card-title">Doctor–Patient Management System</a>
-                                </h3>
-                            </div>
-                        </div>
-                    </li>
-                    <!-- model box -5  -->
-                    <div id="modal5" class="modal">
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-
-                            <h2 class="title h3">Doctor–Patient Management System</h2>
-                            <img style="width: 100%; height: auto;" src="assets/images/doctor -appoint .jpg"
-                                alt="Doctor Portal">
-
-                            <h3>Description</h3>
-                            <p>
-                                <strong>Doctor–Patient Management System</strong> is a role-based healthcare portal
-                                designed to simplify
-                                the management of doctors and patients. The application provides an
-                                <strong>Admin Panel</strong> to add, update, and delete doctor and patient records,
-                                while regular <strong>Users</strong> can log in to view available doctors and patient
-                                details.
-                                Built with <strong>Java Servlets, JDBC, and SQL</strong>, this project demonstrates
-                                strong
-                                backend integration, authentication, and database management skills.
-                            </p>
-
-                            <h3>Key Features</h3>
-                            <ul>
-                                <li>🔹 <strong>Role-based authentication</strong> for Admin and User access</li>
-                                <li>🔹 <strong>Admin Dashboard</strong> to manage doctor and patient records (CRUD)</li>
-                                <li>🔹 <strong>User Portal</strong> to view available doctors and patient list</li>
-                                <li>🔹 <strong>Secure Login System</strong> with session handling</li>
-                                <li>🔹 <strong>SQL Database Integration</strong> for storing and managing healthcare
-                                    data</li>
-                                <li>🔹 <strong>Responsive UI</strong> built with HTML5, CSS3, and JavaScript</li>
-                            </ul>
-
-                            <h3>Technologies</h3>
-                            <p>
-                                <strong>Frontend:</strong> HTML5, CSS3, JavaScript<br>
-                                <strong>Backend:</strong> Java Servlets, JDBC<br>
-                                <strong>Database:</strong> MySQL / SQL<br>
-                                <strong>Others:</strong> JSP, Session Management, MVC Architecture
-                            </p>
-
-                            <h3>Challenges & Solutions</h3>
-                            <p>
-                                <strong>Challenge 1:</strong> Implementing role-based access control for admin and
-                                users.<br>
-                                <em>Solution:</em> Designed a login system with <strong>session-based
-                                    authentication</strong>
-                                and access filters to separate admin and user dashboards.
-                            </p>
-                            <p>
-                                <strong>Challenge 2:</strong> Managing relational data between doctors and patients.<br>
-                                <em>Solution:</em> Used <strong>SQL relational tables</strong> with foreign keys to link
-                                doctors and patients efficiently.
-                            </p>
-                            <p>
-                                <strong>Challenge 3:</strong> Ensuring data integrity during CRUD operations.<br>
-                                <em>Solution:</em> Applied <strong>prepared statements in JDBC</strong> to prevent SQL
-                                injection
-                                and maintain data security.
-                            </p>
-
-                            <div class="links">
-                                <a href="https://your-live-link-here.com" class="btn btn:hover" target="_blank">Live
-                                    Demo</a>
-                                <a href="https://github.com/dhirajjat/Doctor-Patient-Management-System"
-                                    class="btn btn:hover" target="_blank">View Code</a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </ul>
-
-            </section>
-            <!-- 
-        - #Mantras
-      -->
-
-            <!-- <section class="section testi" aria-label="what our client says" id="review">
-        <div class="container">
-
-          <div class="testi-content">
-
-            <blockquote class="title h4 section-text">
-              &ldquo;Success in technology doesn’t come from knowing everything, but from never stopping the process of learning, building, and improving. &rdquo;
-            </blockquote>
-
-            <div class="profile-card">
-              <figure class="card-banner img-holder" style="--width: 70; --height: 70;">
-                <img src="./assets/images/client.png" width="70" height="70" loading="lazy" alt="Alexis browni JR."
-                  class="img-cover">
-              </figure>
-
-              <div>
-                <p class="title h5 card-title">Dhiraj Jat</p>
-
-                <p class="card-subtitle">Founder of alxis co.</p>
-              </div>
-            </div>
-
+        <div class="hsoc">
+          <a href="https://www.linkedin.com/in/dhirajjat/" class="sl" target="_blank" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://github.com/dhirajjat" class="sl" target="_blank" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+          </a>
+          <a href="https://www.instagram.com/dhirajjat02/" class="sl" target="_blank" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="hpic"><img src="./assets/images/profile.jpeg" alt="Dhiraj Jat"></div>
+    </div>
+    <!-- Stats -->
+    <div class="sbar rv">
+      <div class="si"><div class="sn" data-count="3">0<sub>+</sub></div><div class="sl2">Live Client Projects</div></div>
+      <div class="si"><div class="sn" data-count="6">0<sub>mo</sub></div><div class="sl2">Experience</div></div>
+      <div class="si"><div class="sn" data-count="7">0<sub>+</sub></div><div class="sl2">Projects Built</div></div>
+      <div class="si"><div class="sn" data-count="500">0<sub>+</sub></div><div class="sl2">Attendees Managed</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+  <div class="c">
+    <div class="sh rv" style="text-align:center">
+      <div class="sec-tag" style="justify-content:center">Technical Stack</div>
+      <h2 class="sec-h">Skills &amp; <span class="acc">Technologies</span></h2>
+    </div>
+  </div>
+  <div class="mwrap">
+    <div class="mtr"><div class="min" id="r1a"></div><div class="min" id="r1b"></div></div>
+    <div class="mtr rtl"><div class="min" id="r2a"></div><div class="min" id="r2b"></div></div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about">
+  <div class="c">
+    <div class="sec-hdr rv"><div class="sec-tag">Who I Am</div><h2 class="sec-h">About <span class="acc">Me</span></h2></div>
+    <div class="abg">
+      <div class="abiw rv">
+        <img src="./assets/images/long.jpeg" alt="Dhiraj Jat">
+        <div class="abbadge">
+          <div class="abico">🎓</div>
+          <div><div class="abt">MCA Graduate 2025</div><div class="abs">SVVV Indore · MCA + BSc(CS)</div></div>
+        </div>
+      </div>
+      <div class="rv d1">
+        <div class="tabsr">
+          <button class="tb on" data-t="t-about">About Me</button>
+          <button class="tb" data-t="t-intern">Internship</button>
+          <button class="tb" data-t="t-certs">Certificates</button>
+          <button class="tb" data-t="t-beyond">Beyond Code</button>
+        </div>
+       <div class="tp on" id="t-about">
+
+  <!-- Intro + Avatar -->
+  <div style="display:grid;grid-template-columns:1fr auto;gap:20px;align-items:start;margin-bottom:22px">
+    <div>
+      <p class="atxt">I'm <strong>Dhiraj Jat</strong>, a Full Stack Developer specializing in the <strong>MERN stack</strong> — building modern, scalable, and high-performance web applications that solve real-world problems.</p>
+      <p class="atxt" style="margin-bottom:0">I've independently designed and deployed <strong>3 live client platforms</strong> from scratch — UI design, backend APIs, custom domain, SSL, and Vercel deployment. During my <strong>6-month internship at Alphawizz Technology</strong>, I built reusable component libraries used across the team.</p>
+    </div>
+   </div>
+
+  <!-- Divider -->
+  <div style="height:1px;background:var(--border);margin:18px 0"></div>
+
+  <!-- Key Info Grid -->
+  <div class="igrid" style="margin-bottom:20px">
+    <div class="ii"><div class="il">📛 Name</div><div class="iv">Dhiraj Jat</div></div>
+    <div class="ii"><div class="il">🎂 Age</div><div class="iv">23 Years</div></div>
+    <div class="ii"><div class="il">🎓 Education</div><div class="iv">MCA, BSc(CS)</div></div>
+    <div class="ii"><div class="il">📍 Location</div><div class="iv">Indore, MP</div></div>
+    <div class="ii" style="grid-column:span 2"><div class="il">📧 Email</div><div class="iv">dheerajjat9098@gmail.com</div></div>
+  </div>
+
+  <!-- What I Bring -->
+  <div style="margin-bottom:20px">
+    <div style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px">What I bring to the table</div>
+    <div style="display:flex;flex-wrap:wrap;gap:7px">
+      <span style="display:inline-flex;align-items:center;gap:5px;padding:5px 12px;border-radius:100px;font-size:11px;font-weight:500;border:1px solid var(--border);color:var(--text)">💻 3 Live Client Projects</span>
+      <span style="display:inline-flex;align-items:center;gap:5px;padding:5px 12px;border-radius:100px;font-size:11px;font-weight:500;border:1px solid var(--border);color:var(--accent);background:var(--adim)">✅ Full Stack Delivery</span>
+      <span style="display:inline-flex;align-items:center;gap:5px;padding:5px 12px;border-radius:100px;font-size:11px;font-weight:500;border:1px solid var(--border);color:var(--text)">⚡ Fast Learner</span>
+      <span style="display:inline-flex;align-items:center;gap:5px;padding:5px 12px;border-radius:100px;font-size:11px;font-weight:500;border:1px solid var(--border);color:var(--accent);background:var(--adim)">🚀 Solo Deployment</span>
+      <span style="display:inline-flex;align-items:center;gap:5px;padding:5px 12px;border-radius:100px;font-size:11px;font-weight:500;border:1px solid var(--border);color:var(--text)">🔌 REST API Design</span>
+      <span style="display:inline-flex;align-items:center;gap:5px;padding:5px 12px;border-radius:100px;font-size:11px;font-weight:500;border:1px solid var(--border);color:var(--accent);background:var(--adim)">▲ Vercel + SSL + DNS</span>
+    </div>
+  </div>
+
+  <!-- Divider -->
+  <div style="height:1px;background:var(--border);margin:18px 0"></div>
+
+ 
+
+</div>
+        <div class="tp" id="t-intern">
+          <div class="ecard"><div class="eco">Alphawizz Technology · Indore</div><div class="erl">React Developer Intern</div><div class="edur">Jan 2025 – July 2025 · 6 months</div><ul><li>Built reusable React.js component libraries adopted across the team</li><li>Integrated frontends with Node.js/Express REST APIs and MongoDB</li><li>Optimized performance using code splitting and lazy loading</li><li>Contributed to SolarGram — live client solar energy platform</li><li>Tested APIs with Postman; version control via Git</li></ul></div>
+          <div class="ecard"><div class="eco">Unified Mentor · Remote</div><div class="erl">Frontend Developer Intern</div><div class="edur">Dec 2024 – Feb 2025 · 2 months</div><ul><li>Weekly React.js assignments for frontend skill development</li><li>Built responsive static websites using HTML, CSS, Bootstrap</li><li>Practiced Git workflows; submitted tasks to GitHub regularly</li></ul></div>
+          <div class="ecard"><div class="eco">Motivata.in</div><div class="erl">Technical Operations Lead</div><div class="edur">Oct 2025 – Dec 2025</div><ul><li>Managed end-to-end ticketing dashboard for 500+ attendees</li><li>Configured WhatsApp API automation for real-time notifications</li><li>Coordinated 20+ member team and developers</li></ul></div>
+        </div>
+        <div class="tp" id="t-certs">
+          <div class="cgrid">
+            <div class="cc"><img src="./assets/images/alphawizz.jpg" alt="Alphawizz" loading="lazy"></div>
+            <div class="cc"><img src="./assets/images/unified.png" alt="Unified Mentor" loading="lazy"></div>
+            <div class="cc"><img src="./assets/images/codeAlpha.png" alt="CodeAlpha" loading="lazy"></div>
+            <div class="cc"><img src="./assets/images/apna.png" alt="Apna" loading="lazy"></div>
+            <div class="cc"><img src="./assets/images/nptel.png" alt="NPTEL" loading="lazy"></div>
+            <div class="cc"><img src="./assets/images/nptelSoft.png" alt="NPTEL Soft" loading="lazy"></div>
           </div>
-
         </div>
-      </section> -->
-            <section class="section testi" aria-label="inspirational quotes" id="mantras">
-                <div class="container">
-
-                    <!-- Swiper Slider -->
-                    <div class="swiper myQuotes">
-                        <div class="swiper-wrapper">
-
-                            <!-- Slide 1 -->
-                            <div class="swiper-slide">
-                                “Dream, dream, dream. Dreams transform into thoughts and thoughts result in action.”–
-                                <small>Dr. A.P.J.
-                                    Abdul Kalam</small>
-                            </div>
-
-                            <!-- Slide 2 -->
-                            <div class="swiper-slide">
-                                “Your work is going to fill a large part of your life, and the only way to be truly
-                                satisfied is to do
-                                what you believe is great work.” <small>– Steve Jobs</small>
-                            </div>
-
-                            <!-- Slide 3 -->
-                            <div class="swiper-slide">
-                                “It always seems impossible until it’s done.”<small> – Nelson Mandela</small>
-                            </div>
-
-                            <!-- Slide 4 -->
-                            <div class="swiper-slide">
-                                “Be the change that you wish to see in the world.”<small>– Mahatma Gandhi</small>
-                            </div>
-
-                            <div class="swiper-slide">
-                                “Difference between motivation and inspiration - Motivation is external and short lived.
-                                Inspiration is
-                                internal and lifelong”
-                                <small>―Sri Sri Ravi Shankar</small>
-                            </div>
-
-
-                        </div>
-
-
-                    </div>
-
-                </div>
-            </section>
-
-
-
-
-
-            <!-- 
-        - #CONTACT
-      -->
-
-            <section class="section contact" aria-label="contact me" id="contact">
-                <div class="container">
-
-                    <h2 class="title h2 section-title">Get In Touch</h2>
-
-                    <div class="contact-content">
-
-                        <form action="./index.html" method="post" class="contact-form">
-
-                            <input type="text" name="name" placeholder="Full name" autocomplete="off" required
-                                class="input-field">
-
-                            <input type="email" name="email_address" placeholder="Email address" autocomplete="off"
-                                required class="input-field">
-
-                            <input type="tel" name="phone" placeholder="Phone" autocomplete="off" class="input-field">
-
-                            <textarea name="message" placeholder="Enter massges" required
-                                class="input-field"></textarea>
-
-                            <button type="submit" class="btn btn:hover">
-                                <span class="span">Get A Quote</span>
-
-                                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                            </button>
-
-                        </form>
-
-
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.6059701732333!2d75.857727!3d22.719568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd1488aa8d5f%3A0x4c2dbd1fbb0b1d54!2sIndore%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1724932222222!5m2!1sen!2sin"
-                            width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade" class="map">
-                        </iframe>
-
-
-                        <ul class="contact-list">
-
-                            <li class="contact-item">
-
-                                <div class="item-icon">
-                                    <img src="./assets/images/contact-icon-1.png" width="50" height="50" loading="lazy"
-                                        alt="contact icon">
-                                </div>
-
-                                <div>
-                                    <span class="title h6">9098******</span>
-
-
-                                </div>
-
-                            </li>
-
-                            <li class="contact-item">
-
-                                <div class="item-icon">
-                                    <img src="./assets/images/contact-icon-2.png" width="50" height="50" loading="lazy"
-                                        alt="contact icon">
-                                </div>
-
-                                <div>
-                                    <address class="title h6">
-                                        Vijay Nagar , Indore
-                                        , Madhya Pradesh
-                                        , India
-                                    </address>
-                                </div>
-
-                            </li>
-
-                            <li class="contact-item">
-
-                                <div class="item-icon">
-                                    <img src="./assets/images/contact-icon-3.png" width="50" height="50" loading="lazy"
-                                        alt="contact icon">
-                                </div>
-
-                                <div>
-                                    <span class="title h6">dheerajjat9098@gmail.com</span>
-
-                                </div>
-
-                            </li>
-
-                        </ul>
-
-                    </div>
-
-                </div>
-            </section>
-
-        </article>
-    </main>
-
-
-
-
-
-    <!-- 
-    - #FOOTER
-  -->
-
-    <footer class="footer">
-        <div class="container">
-
-            <p class="copyright">
-                Copyright & Design By @Dhiraj_Jat - 2025
-            </p>
-
-            <a href="#top" class="back-top-btn">
-                <span class="span">Back To Top</span>
-
-                <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
-            </a>
-
+        <div class="tp" id="t-beyond">
+          <div class="vc"><div class="vi">🦸</div><div><div class="vt">Robin Hood Army – Volunteer</div><div class="vd">Supported food distribution drives to serve underprivileged communities and reduce hunger. Coordinated logistics with fellow volunteers.</div><a href="https://robinhoodarmy.com/" target="_blank" class="vl">Visit Robin Hood Army ↗</a></div></div>
+          <div class="vc"><div class="vi">🌱</div><div><div class="vt">Art of Living – Volunteer</div><div class="vd">Tree plantation drives, food distribution, teaching underprivileged children, and promoting yoga & meditation in the community.</div><a href="https://www.artofliving.org/in-en/social-impact" target="_blank" class="vl">Learn More ↗</a></div></div>
         </div>
-    </footer>
+      </div>
+    </div>
+  </div>
+</section>
 
+<!-- Projects -->
+<section id="projects">
+  <div class="c">
+    <div class="sec-hdr rv"><div class="sec-tag">My Work</div><h2 class="sec-h">Featured <span class="acc">Projects</span></h2></div>
+    <div class="pgrid" id="pg"></div>
+  </div>
+</section>
 
+<!-- Services -->
+<section id="service">
+  <div class="c">
+    <div class="sec-hdr rv" style="text-align:center"><div class="sec-tag" style="justify-content:center">What I Do</div><h2 class="sec-h">My <span class="acc">Services</span></h2></div>
+    <div class="svgrid">
+      <div class="sv rv"><div class="svico">🎨</div><div class="svn">UI / UX Development</div><div class="svd">Pixel-perfect, mobile-first interfaces with React.js and Next.js. Fast, accessible, and user-centric.</div></div>
+      <div class="sv rv d1"><div class="svico">⚙️</div><div class="svn">Backend & API Dev</div><div class="svd">Scalable REST APIs and server-side systems using Node.js, Express, FastAPI, and MongoDB.</div></div>
+      <div class="sv rv d2"><div class="svico">🚀</div><div class="svn">Full Stack Delivery</div><div class="svd">End-to-end product delivery — design, development, Vercel deploy, custom domain, SSL & DNS.</div></div>
+      <div class="sv rv d3"><div class="svico">⚡</div><div class="svn">Real-Time Systems</div><div class="svd">WebRTC and Socket.IO based real-time apps — video calls, live notifications, event-driven systems.</div></div>
+    </div>
+  </div>
+</section>
 
+<!-- CTA -->
+<div style="padding:clamp(40px,6vw,60px) 0">
+  <div class="ctab rv">
+    <div class="sec-tag" style="justify-content:center">Let's Build Together</div>
+    <h2 class="sec-h">Ready to Start Your <span class="acc">Next Project?</span></h2>
+    <p>Available for freelance projects, full-time roles, and collaborations. Let's turn your ideas into reality.</p>
+    <div class="ctabtns">
+      <a href="#contact" class="btn-p">Get In Touch</a>
+      <a href="/assets/images/Dhiraj Jat resume.jpg" target="_blank" class="btn-s">Download Resume</a>
+    </div>
+  </div>
+</div>
 
+<!-- Mantras -->
+<section id="mantras">
+  <div class="c">
+    <div class="sec-tag rv" style="justify-content:center;margin-bottom:24px">Dev Mantras</div>
+    <div class="rv">
+      <div class="qsl on"><div class="qtxt">"Dream, dream, dream. Dreams transform into thoughts and thoughts result in action."</div><div class="qauth">— Dr. A.P.J. Abdul Kalam</div></div>
+      <div class="qsl"><div class="qtxt">"The only way to do great work is to love what you do."</div><div class="qauth">— Steve Jobs</div></div>
+      <div class="qsl"><div class="qtxt">"It always seems impossible until it's done."</div><div class="qauth">— Nelson Mandela</div></div>
+      <div class="qsl"><div class="qtxt">"Be the change that you wish to see in the world."</div><div class="qauth">— Mahatma Gandhi</div></div>
+      <div class="qsl"><div class="qtxt">"Motivation is external and short lived. Inspiration is internal and lifelong."</div><div class="qauth">— Sri Sri Ravi Shankar</div></div>
+    </div>
+    <div class="qdots" id="qdots"></div>
+  </div>
+</section>
 
-    <!-- 
-    - #CUSTOM CURSOR
-  -->
+<!-- Contact -->
+<section id="contact">
+  <div class="c">
+    <div class="sec-hdr rv"><div class="sec-tag">Get In Touch</div><h2 class="sec-h">Let's <span class="acc">Connect</span></h2></div>
+    <div class="congrid">
+      <div class="rv">
+        <p style="color:var(--muted);font-size:clamp(13px,2vw,15px);line-height:1.85">Have a project in mind or want to discuss an opportunity? I usually respond within 24 hours.</p>
+        <div class="conitems">
+          <div class="ci"><div class="ciico">📧</div><div><div class="cill">Email</div><div class="civl">dheerajjat9098@gmail.com</div></div></div>
+          <div class="ci"><div class="ciico">📞</div><div><div class="cill">Phone</div><div class="civl">+91 9098448492</div></div></div>
+          <div class="ci"><div class="ciico">📍</div><div><div class="cill">Location</div><div class="civl">Vijay Nagar, Indore, MP – India</div></div></div>
+        </div>
+         </div>
+      <div class="confrm rv d1">
+        <form action="./index.html" method="post">
+          <div class="frow">
+            <div class="fg"><label>Full Name</label><input type="text" placeholder="Your Name" required></div>
+            <div class="fg"><label>Email</label><input type="email" placeholder="your@email.com" required></div>
+          </div>
+          <div class="fg"><label>Phone</label><input type="tel" placeholder="+91 00000 00000"></div>
+          <div class="fg"><label>Message</label><textarea placeholder="Tell me about your project..."></textarea></div>
+          <button type="submit" class="btn-p" style="width:100%;justify-content:center;border-radius:10px;margin-top:4px">Send Message →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <div class="cursor-dot" data-cursor></div>
-    <div class="cursor-outline" data-cursor></div>
+<!-- Footer -->
+<footer>
+  <div class="c">
+    <div class="logo">DJ<em style="color:var(--accent)">.</em></div>
+    <p class="fcopy">© 2025 Dhiraj Jat — Built with 💚 in Indore</p>
+    <a href="#hero" class="ftop">Back to top <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg></a>
+  </div>
+</footer>
 
+<!-- Modal -->
+<div class="modal" id="modal">
+  <div class="mbox" id="mbox">
+    <button class="mcl" id="mcl">✕</button>
+    <img class="mimg" id="mimg" src="" alt="">
+    <div class="mbody">
+      <div class="mtags" id="mtags"></div>
+      <h2 class="mttl" id="mttl"></h2>
+      <p class="mdsc" id="mdsc"></p>
+      <div class="mst">Key Features</div>
+      <ul class="mfl" id="mfl"></ul>
+      <div class="mst">Tech Stack</div>
+      <div class="mtech" id="mtech"></div>
+      <div class="mact" id="mact"></div>
+    </div>
+  </div>
+</div>
 
+<script>
+/* ── DATA ── */
+const S1=[
+  {n:'JavaScript',i:'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'},
+  {n:'React.js',i:'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'},
+  {n:'Next.js',i:'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg'},
+  {n:'Node.js',i:'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg'},
+  {n:'Express.js',i:'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg'},
+  {n:'MongoDB',i:'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg'},
+  {n:'MySQL',i:'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg'},
+  {n:'Tailwind',i:'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg'},
+  {n:'Bootstrap',i:'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg'},
+  {n:'Git',i:'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg'},
+];
+const S2=[
+  {n:'GitHub',i:'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg'},
+  {n:'Java',i:'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg'},
+  {n:'C',i:'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg'},
+  {n:'Socket.IO',i:'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg'},
+  {n:'Redux',i:'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg'},
+  {n:'Postman',i:'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg'},
+  {n:'Vercel',i:'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg'},
+  {n:'HTML5',i:'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'},
+  {n:'CSS3',i:'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg'},
+  {n:'FastAPI',i:'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg'},
+];
+const PROJ=[
+  {name:'Brhma – Premium Business Platform',desc:'Performance-optimized, mobile-first business and brand platform built solo from scratch. FastAPI REST API backend handles inquiry processing with production-grade Vercel deployment.',img:'./assets/images/BRHMA.png',tags:['⚡ Live Client','FastAPI','Vercel'],tech:['React.js','FastAPI','REST API','Vercel','SSL','DNS'],live:'https://brhma.in',code:null,type:'Live Client Work',feat:true,feats:['Designed and deployed entirely from scratch, solo','Performance-optimized mobile-first design','FastAPI + REST API layer for inquiry handling','Custom domain, SSL, DNS configured on Vercel','Zero post-launch issues — full production-grade delivery']},
+  {name:'Madhurya – Luxury Interior Décor',desc:'Full-featured Next.js e-commerce storefront for 100+ SKUs with SSR for SEO and a complete self-serve admin dashboard. Live at madhuryaartifacts.in.',img:'./assets/images/madhurya.png',tags:['⚡ Live Client','Next.js','E-Commerce'],tech:['Next.js','SSR','Admin Dashboard','Vercel','MongoDB','REST API'],live:'https://madhuryaartifacts.in',code:null,type:'Live Client Work',feat:true,feats:['100+ SKU storefront with server-side rendering for SEO','Self-serve admin dashboard — client manages independently','Product, category, and inquiry management system','Custom domain, SSL & DNS on Vercel','Full solo ownership from design to deployment']},
+  {name:'QuickMeet – Video Conferencing',desc:'Real-time video meeting platform with WebRTC peer-to-peer communication, Socket.IO signaling, in-room chat, and JWT authentication. Supports multiple concurrent users.',img:'./assets/images/quickmeetcollege (1).jpg',tags:['WebRTC','Socket.IO','Real-Time'],tech:['React.js','Node.js','WebRTC','Socket.IO','MongoDB Atlas','JWT'],live:'https://quickmeetfrontend-b5ws.onrender.com/',code:'https://github.com/dhirajjat/QuickMeet',type:'Personal Project',feat:false,feats:['P2P video/audio via WebRTC with STUN/TURN servers','Real-time signaling and room management via Socket.IO','In-room text chat messaging','JWT-based auth and HTTPS security','Multi-participant support with low latency']},
+  {name:'Airbnb Clone – Property Platform',desc:'Full-stack property listing platform with Passport.js authentication, owner-only edit/delete, Mapbox location markers, and Cloudinary image upload.',img:'./assets/images/airbnb.png',tags:['Full Stack','MongoDB','Mapbox'],tech:['Node.js','Express.js','MongoDB','Passport.js','Mapbox SDK','Cloudinary'],live:'https://airbnb-7umo.onrender.com/listings',code:'https://github.com/dhirajjat/Airbnb',type:'Personal Project',feat:false,feats:['JWT + Passport.js authentication and authorization','Property listing CRUD with owner-only access control','Mapbox SDK integration for interactive property markers','Cloudinary image upload and cloud storage','Review system with user-specific delete permissions']},
+  {name:'SolarGram – Solar Energy Website',desc:'Corporate website for a solar energy solutions provider. Contributed during internship at Alphawizz Technology — UI development, animations, and product layout.',img:'./assets/images/solargram.jpg',tags:['Internship','React.js','Client Work'],tech:['React.js','Tailwind CSS','Bootstrap','Framer Motion','Google Maps API'],live:'https://solargram.in/',code:'https://github.com/dhirajjat/Solargram',type:'Internship Project',feat:false,feats:['Contributed to live client-facing website','Product showcase with responsive layout','Google Maps integration for contact page','Framer Motion animations for smooth UX','Mobile-first responsive design']},
+  {name:'QuickStay – Hotel Booking App',desc:'Component-based hotel booking application with Clerk authentication, filterable listings by price and availability, room gallery, and dummy payment workflow.',img:'./assets/images/quick stay.jpg',tags:['React.js','Clerk Auth','UI/UX'],tech:['React.js','Tailwind CSS','Bootstrap','Clerk','JSON Data'],live:'https://queeckstay.netlify.app/',code:'https://github.com/dhirajjat/QuickStay',type:'Personal Project',feat:false,feats:['Clerk authentication with login and protected routes','Filterable hotel listings by price and availability','Room gallery showcase with detailed images','Dummy payment simulation workflow','Fully responsive for mobile and desktop']},
+  {name:'Doctor–Patient Management System',desc:'Role-based healthcare portal with Java Servlets and JDBC. Admin manages doctor/patient records (CRUD) while users can view available doctors and patient info.',img:'./assets/images/doctor -appoint .jpg',tags:['Java','MySQL','Full Stack'],tech:['Java Servlets','JDBC','MySQL','JSP','MVC Architecture'],live:null,code:'https://github.com/dhirajjat/Doctor-Patient-Management-System',type:'Academic Project',feat:false,feats:['Role-based auth for Admin and User access','Admin dashboard with full CRUD for doctors and patients','Session-based authentication with access filters','SQL relational tables with foreign key constraints','JDBC prepared statements for SQL injection prevention']},
+];
 
+/* ── BUILD SKILLS ── */
+const chip=s=>`<div class="skc"><img src="${s.i}" alt="${s.n}" loading="lazy" onerror="this.style.display='none'">${s.n}</div>`;
+const row=(sk,a,b)=>{const h=sk.map(chip).join('');document.getElementById(a).innerHTML=h;document.getElementById(b).innerHTML=h;};
+row(S1,'r1a','r1b'); row(S2,'r2a','r2b');
 
+/* ── BUILD PROJECTS ── */
+const pg=document.getElementById('pg');
+PROJ.forEach((p,i)=>{
+  const d=document.createElement('div');
+  d.className='pc rv'+(p.feat?' feat':'')+(i%3===1?' d1':i%3===2?' d2':'');
+  d.innerHTML=`${p.feat?'<div class="fbadge">⚡ Live Client</div>':''}
+  <div class="pim"><img src="${p.img}" alt="${p.name}" loading="lazy">
+  <div class="pov"><div class="plks">${p.live?`<a href="${p.live}" class="pl lv" target="_blank" onclick="event.stopPropagation()">Live ↗</a>`:''} ${p.code?`<a href="${p.code}" class="pl cd" target="_blank" onclick="event.stopPropagation()">Code</a>`:''}</div></div></div>
+  <div class="pb"><div class="ptags">${p.tags.map(t=>`<span class="ptag">${t}</span>`).join('')}</div><div class="pname">${p.name}</div><div class="pdsc">${p.desc}</div></div>
+  <div class="pft"><span class="pty">${p.type}</span><div class="par">→</div></div>`;
+  d.addEventListener('click',()=>openM(p));
+  pg.appendChild(d);
+});
 
+/* ── MODAL ── */
+function openM(p){
+  document.getElementById('mimg').src=p.img;
+  document.getElementById('mttl').textContent=p.name;
+  document.getElementById('mdsc').textContent=p.desc;
+  document.getElementById('mtags').innerHTML=p.tags.map(t=>`<span class="ptag">${t}</span>`).join('');
+  document.getElementById('mfl').innerHTML=p.feats.map(f=>`<li>${f}</li>`).join('');
+  document.getElementById('mtech').innerHTML=p.tech.map(t=>`<span>${t}</span>`).join('');
+  document.getElementById('mact').innerHTML=`${p.live?`<a href="${p.live}" class="btn-p" target="_blank" style="min-width:0">Live Demo ↗</a>`:''} ${p.code?`<a href="${p.code}" class="btn-s" target="_blank" style="min-width:0">View Code</a>`:''}`;
+  document.getElementById('modal').classList.add('on');
+  document.body.style.overflow='hidden';
+}
+document.getElementById('mcl').onclick=closeM;
+document.getElementById('modal').onclick=e=>{if(e.target===document.getElementById('modal'))closeM();};
+function closeM(){document.getElementById('modal').classList.remove('on');document.body.style.overflow='';}
 
+/* ── TYPEWRITER ── */
+const roles=['Full Stack Developer','MERN Stack Expert','React.js Developer','Next.js Developer','UI / UX Engineer'];
+let ri=0,ci=0,del=false;
+const tel=document.getElementById('typed');
+function tw(){
+  const c=roles[ri];
+  if(!del){tel.textContent=c.substring(0,ci+1);ci++;if(ci===c.length){del=true;setTimeout(tw,2200);return;}}
+  else{tel.textContent=c.substring(0,ci-1);ci--;if(ci===0){del=false;ri=(ri+1)%roles.length;}}
+  setTimeout(tw,del?55:100);
+}
+tw();
 
-    <!-- 
-    - custom js link
-  -->
-    <script src="./assets/js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+/* ── HEADER + PROGRESS ── */
+const hdr=document.getElementById('hdr'),sp=document.getElementById('sp');
+window.addEventListener('scroll',()=>{
+  const p=window.scrollY/(document.documentElement.scrollHeight-window.innerHeight)*100;
+  sp.style.width=p+'%';
+  hdr.classList.toggle('sc',window.scrollY>60);
+},{passive:true});
 
-    <!-- 
-    - ionicon link
-  -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script>
-        // Get modal elements
-        const modal = document.getElementById("projectModal");
-        const modalTitle = document.getElementById("projectTitle");
-        const modalDesc = document.getElementById("projectDescription");
-        const modalImg = document.getElementById("projectImage");
-        const closeBtn = document.querySelector(".close");
+/* ── CURSOR ── */
+const cdot=document.getElementById('cdot'),cr=document.getElementById('cring');
+const mob=/Mobi|Android|iPhone|iPad/i.test(navigator.userAgent);
+if(!mob){
+  cdot.style.display='block';cr.style.display='block';
+  let mx=0,my=0,rx=0,ry=0;
+  document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cdot.style.left=mx+'px';cdot.style.top=my+'px';});
+  setInterval(()=>{rx+=(mx-rx)*.12;ry+=(my-ry)*.12;cr.style.left=rx+'px';cr.style.top=ry+'px';},16);
+  document.querySelectorAll('a,button,.pc,.skc').forEach(el=>{
+    el.addEventListener('mouseenter',()=>cr.classList.add('hov'));
+    el.addEventListener('mouseleave',()=>cr.classList.remove('hov'));
+  });
+} else {
+  document.addEventListener('touchstart',e=>{
+    const t=e.touches[0],r=document.createElement('div');
+    r.className='ripple';r.style.cssText=`left:${t.clientX}px;top:${t.clientY}px;width:55px;height:55px`;
+    document.body.appendChild(r);setTimeout(()=>r.remove(),700);
+  },{passive:true});
+}
 
-        // Example project data
-        const projects = [
-            {
-                title: "Creative & Experienced Digital Design Studio",
-                description: "This project was about creating a modern digital design studio website with responsive UI and smooth animations.",
-                image: "./assets/images/project-1.jpg"
-            },
-            {
-                title: "E-Commerce Platform",
-                description: "A full-stack e-commerce solution with cart, authentication, and payment gateway integration.",
-                image: "./assets/images/project-2.jpg"
-            },
-            {
-                title: "Portfolio Website",
-                description: "A personal portfolio built with React and Tailwind CSS to showcase projects and blogs.",
-                image: "./assets/images/project-3.jpg"
-            }
-        ];
+/* ── SCROLL REVEAL ── */
+const obs=new IntersectionObserver(en=>en.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis');}),{threshold:.1});
+document.querySelectorAll('.rv').forEach(el=>obs.observe(el));
 
-        // Attach event to all 'Project Details' buttons
-        document.querySelectorAll(".btn.details").forEach((btn, index) => {
-            btn.addEventListener("click", function (e) {
-                e.preventDefault();
-                modal.style.display = "block";
-                modalTitle.textContent = projects[index].title;
-                modalDesc.textContent = projects[index].description;
-                modalImg.src = projects[index].image;
-            });
-        });
+/* ── COUNTER ── */
+const cobs=new IntersectionObserver(en=>en.forEach(e=>{
+  if(e.isIntersecting&&!e.target.dataset.done){
+    e.target.dataset.done=1;
+    const mx=+e.target.dataset.count,sub=e.target.querySelector('sub').textContent;
+    let n=0,st=Math.max(1,Math.ceil(mx/50));
+    const iv=setInterval(()=>{n=Math.min(n+st,mx);e.target.childNodes[0].textContent=n;if(n>=mx)clearInterval(iv);},30);
+  }
+}),{threshold:.5});
+document.querySelectorAll('[data-count]').forEach(el=>cobs.observe(el));
 
-        // Close modal
-        closeBtn.onclick = function () {
-            modal.style.display = "none";
-        };
-        window.onclick = function (e) {
-            if (e.target == modal) {
-                modal.style.display = "none";
-            }
-        };
-    </script>
+/* ── TABS ── */
+document.querySelectorAll('.tb').forEach(b=>{
+  b.addEventListener('click',()=>{
+    document.querySelectorAll('.tb').forEach(x=>x.classList.remove('on'));
+    document.querySelectorAll('.tp').forEach(x=>x.classList.remove('on'));
+    b.classList.add('on');
+    document.getElementById(b.dataset.t).classList.add('on');
+  });
+});
 
+/* ── HAMBURGER ── */
+const ham=document.getElementById('ham'),mnav=document.getElementById('mnav');
+ham.addEventListener('click',()=>{ham.classList.toggle('open');mnav.classList.toggle('open');document.body.style.overflow=mnav.classList.contains('open')?'hidden':'';});
+function cn(){ham.classList.remove('open');mnav.classList.remove('open');document.body.style.overflow='';}
 
+/* ── QUOTES ── */
+const qsl=document.querySelectorAll('.qsl'),qd=document.getElementById('qdots');
+let qi=0;
+qsl.forEach((_,i)=>{const d=document.createElement('div');d.className='qd'+(i===0?' on':'');d.onclick=()=>goQ(i);qd.appendChild(d);});
+function goQ(n){qsl[qi].classList.remove('on');qd.children[qi].classList.remove('on');qi=n;qsl[qi].classList.add('on');qd.children[qi].classList.add('on');}
+setInterval(()=>goQ((qi+1)%qsl.length),4500);
+</script>
 </body>
-
 </html>
